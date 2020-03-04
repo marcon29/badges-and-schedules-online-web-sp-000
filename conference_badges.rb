@@ -16,8 +16,8 @@ end
 
 def printer(speaker_list)
   speaker_list.collect do |speaker|
-    puts batch_badge_creator(speakers)
-    puts assign_rooms(speakers)
+    puts batch_badge_creator(speaker)
+    puts assign_rooms(speaker)
   end
 end
 
