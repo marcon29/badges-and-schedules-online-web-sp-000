@@ -6,7 +6,6 @@ def batch_badge_creator(speaker_list)
   speaker_list.collect {|speaker| badge_maker(speaker)}
 end
 
-
 def assign_rooms(speaker_list)
   speaker_rooms = []
   speaker_list.each_with_index do |speaker, index|
@@ -15,8 +14,11 @@ def assign_rooms(speaker_list)
   speaker_rooms
 end
 
-def printer
-
+def printer(speaker_list)
+  speaker_list.collect do |speaker|
+    puts batch_badge_creator(speakers)
+    puts assign_rooms(speakers)
+  end
 end
 
 # speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
