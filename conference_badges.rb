@@ -24,7 +24,7 @@ def printer(speaker_list)
   end
 end
 
-# speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 # puts batch_badge_creator(speakers)
 # puts assign_rooms(speakers)
 printer(speakers)
